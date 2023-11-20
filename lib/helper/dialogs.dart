@@ -9,7 +9,7 @@ class Dialogs {
           style:
               const TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
-        backgroundColor: const Color.fromARGB(255, 190, 20, 8).withOpacity(.8),
+        backgroundColor: const Color.fromARGB(255, 8, 190, 23).withOpacity(.8),
         behavior: SnackBarBehavior.floating,
       ),
     );

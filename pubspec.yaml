@@ -43,6 +43,22 @@ dependencies:
   cloud_firestore: ^4.9.2
   #for showing network error
   cached_network_image: ^3.3.0
+  image_picker: ^1.0.4
+  get: ^4.6.6
+  firebase_storage: ^11.4.1
+  #for showing emojis
+  emoji_picker_flutter: ^1.6.3
+  #for accessing firebase messaging (push notification)
+  firebase_messaging: ^14.7.4
+  #for calling RestAPIs
+  http: ^0.13.3
+  #for creating notification channel
+  flutter_notification_channel: ^2.0.0
+  #for storing images into gallery
+  gallery_saver: ^2.3.2
+  
+  
+ 
 
 flutter_launcher_icons:
   android: "launcher_icon"

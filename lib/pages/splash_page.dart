@@ -22,7 +22,9 @@ class _SplashPageState extends State<SplashPage> {
       //exit full screen
       SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
       SystemChrome.setSystemUIOverlayStyle(
-        const SystemUiOverlayStyle(systemNavigationBarColor: Colors.white),
+        const SystemUiOverlayStyle(
+            systemNavigationBarColor: Colors.white,
+            statusBarColor: Colors.white),
       );
       if (APIs.auth.currentUser != null) {
         print("\n user ${FirebaseAuth.instance.currentUser}");
@@ -66,9 +68,9 @@ class _SplashPageState extends State<SplashPage> {
               width: 350,
               height: 50,
               bottom: 100,
-              left: 57,
+              left: 50,
               child: Text(
-                "Let's have a goog conversation 💚",
+                "Let's have a good conversation 💚",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     color: Colors.pink,

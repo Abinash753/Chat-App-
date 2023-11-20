@@ -2,6 +2,8 @@ import 'package:chat_app/pages/splash_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_notification_channel/flutter_notification_channel.dart';
+import 'package:flutter_notification_channel/notification_importance.dart';
 
 import 'firebase_options.dart';
 
@@ -55,5 +57,14 @@ initializedFirebae() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+  var result = await FlutterNotificationChannel.registerNotificationChannel(
+    description: 'For showing message notification',
+    id: 'chats',
+    importance: NotificationImportance.IMPORTANCE_HIGH,
+    name: 'Chats',
+  );
+  print("notification chanel : $result");
 }
     //<item name= "android.windowLayoutInDisplayCutoutMode">shortEdges</item> 
+
+    
